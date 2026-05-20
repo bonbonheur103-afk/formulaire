@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="form.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <section class="container">
+        <div class="form2">
+            <span class="icone">
+                <i class="fa-solid fa-check"></i>
+            </span>
+            <div class="bloc2">
+                <span>Account</span>
+                <form action="">
+
+                    <div class="ligne">
+                        <div class="champ">
+                            <label for="Full Name">Full Name</label>
+                            <input type="text" name="Full Name" id="Full Name" required>
+                        </div>
+                    </div>
+
+                    <div class="ligne">
+                        <div class="champ">
+                            <label for="Email Address">Email Address</label>
+                            <input type="email" name="Email Address" id="Email Address" required>
+                        </div>
+                    </div>
+
+                    <div class="ligne">
+                        <div class="champ">
+                            <label for="Phone Number">Phone Number</label>
+                            <input type="text" name="Phone Number" id="Phone Number" required>
+                        </div>
+                    </div>
+                </section>
+                <br>
+                <section class="billing">
+                    <span>Billing</span>
+
+                    <div class="ligne">
+                        <div class="champ">
+                            <label for="Plan">Plan</label>
+                            <input type="text" name="Plan" id="Plan"required>
+                        </div>
+
+                        <div class="champ">
+                            <label for="Billing Interval">Billing Interval</label>
+                            <select name="Billing Interval" id="Billing Interval" required>
+                                <option value="Monthly">Monthly</option>
+                            </select>
+                        </div>
+                    </div>
+                </section>
+                <br>
+                <section class="adresse">
+                    <span>Business Address</span>
+
+                    <div class="ligne">
+                        <div class="champ">
+                            <label for="Street Address">Street Address</label>
+                            <input type="text" name="Street Address" id="Street Address" required>
+                        </div>
+                    </div>
+
+                    <div class="ligne">
+                        <div class="champ">
+                            <label for="City">City</label>
+                            <input type="text" name="City" id="City" required>
+                        </div>
+
+                        <div class="champ">
+                            <label for="Province">Province</label>
+                            <select name="Province" id="Province" required>
+                                <option value="Ontario">Ontario</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="ligne">
+                        <div class="champ">
+                            <label for="ZIP/Postal Code">ZIP/Postal Code</label>
+                            <input type="text" name="ZIP/Postal Code" id="ZIP/Postal Code" required>
+                        </div>
+
+                        <div class="champ">
+                            <label for="Country">Country</label>
+                            <select name="Country" id="Country" required>
+                                <option value="Canada">Canada</option>
+                                <option value="United States">United States</option>
+                                <option value="Mexico">Mexico</option>
+                            </select>
+                        </div>
+                    </div>
+                </section>
+                <br>
+                <section class="mdp">
+                        <span> Change Password</span>
+
+                        <div class="ligne">
+                            <div class="champ">
+                                <label for="Password">Password</label>
+                                <input type="password" name="Password" id="Password" required>
+                            </div>
+
+                            <div class="champ">
+                                <label for="Confirm Password">Confirm Password</label>
+                                <input type="password" name="Confirm Password" id="Confirm Password" required>
+                            </div>
+                        </div>
+                        <div class="btn">
+                                <input type="reset" value="CANCEL">
+                                <input type="submit" value="UPDATE">
+                            </div>
+                        </div>
+                </section>
+            </form>
+        </div>
+    </section>
+</body>
+</html>

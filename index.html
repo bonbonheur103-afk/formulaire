@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <section class="container">
+        <div class="form1">
+            <span class="icone">
+                <i class="fa-solid fa-xmark"></i>
+            </span>
+            <div class="bloc1">
+                <span>Setting</span>
+                <form action="">
+                    <div class="fullname">
+                        <label for="fullname">Full Name</label>
+                        <input type="text" name="fullname" id="fullname" required>
+                    </div>
+                    <div class="email">
+                        <label for="email">Email Adress</label>
+                        <input type="email" name="email" id="email" required>
+                    </div>
+                    <div class="phone">
+                        <label for="phone">Phone</label>
+                        <input type="number" name="phone" id="phone" placeholder=" Format valide : 00229 01 XX XX XX XX" required> 
+                    </div>
+                    <div class="plan-billing">
+                        <div class="plan">
+                            <label for="plan">Plan</label>
+                            <input type="text" name="plan" id="plan" required>
+                        </div>
+                        <div class="billing">
+                            <label for="billing">Billing Interval</label>
+                            <select name="billing" id="billing" required>
+                                <option value="annually">Annually</option>
+                                <option value="monthly">Monthly</option>
+                                <option value="quarterly">Quarterly</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="street">
+                        <label for="street">Street Address</label>
+                        <input type="text" name="street" id="street" required>
+                    </div>
+                    <div class="city-province">
+                        <div class="city">
+                            <label for="city">City</label>
+                            <input type="text" name="city" id="city" required>
+                        </div>
+                        <div class="province">
+                            <label for="province">Province</label>
+                            <select name="province" id="province" required>
+                                <option value="Ontario">Ontario</option>
+                                <option value="Quebec">Quebec</option>
+                                <option value="Nova Scotia">Nova Scotia</option>
+                                <option value="New Brunswick">New Brunswick</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="zip-country">
+                        <div class="zip">
+                            <label for="zip">Zip/Postal code</label>
+                            <input type="text" name="zip" id="zip" required>
+                        </div>
+                        <div class="country">
+                            <label for="country">Country</label>
+                            <select name="country" id="country" required>
+                                <option value="Canada">Canada</option>
+                                <option value="United States">United States</option>
+                                <option value="Mexico">Mexico</option>
+                                <option value="United Kingdom">United Kingdom</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="mdp">
+                        <div class="password">
+                            <label for="password">Password</label>
+                            <input type="password" name="password" id="password" required>
+                        </div>
+                        <div class="confirm-password">
+                            <label for="confirm-password">Confirm Password</label>
+                            <input type="password" name="confirm-password" id="confirm-password" required>
+                        </div>
+                    </div>
+                    <div class="btn">
+                        <input type="reset" value="CANCEL">
+                        <input type="submit" value="UPDATE">
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="form2">
+            <span class="icone1">
+                <i class="fa-solid fa-check"></i>
+            </span>
+            <div class="bloc2">
+                <span class="set">Settings</span>
+                <hr>
+                <form action="">
+                    <div class="Account">
+                        <span>Account</span>
+                        <div class="bloc-account">
+                            <div class="fullname">
+                                <label for="fullname">Full Name</label>
+                                <input type="text" name="fullname" id="fullname" required>
+                            </div>
+                            <div class="email">
+                                <label for="email">Email Adress</label>
+                                <input type="email" name="email" id="email" required>
+                            </div>
+                            <div class="phone">
+                                <label for="phone">Phone</label>
+                                <input type="number" name="phone" id="phone" placeholder=" Format valide : 00229 01 XX XX XX XX" required> 
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="billings">
+                        <span>Billing</span>
+                        <div class="plan-billing" id="plan-billing">
+                            <div class="plan">
+                                <label for="plan">Plan</label>
+                                <input type="text" name="plan" id="plan" required>
+                            </div>
+                            <div class="billing">
+                                <label for="billing">Billing Interval</label>
+                                <select name="billing" id="billing" required>
+                                    <option value="annually">Annually</option>
+                                    <option value="monthly">Monthly</option>
+                                    <option value="quarterly">Quarterly</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="busness-adress">
+                        <span>Busness Adress</span>
+                        <div class="bloc-busness">
+                            <div class="street">
+                                <label for="street"> Street Adress</label>
+                                <input type="street" name="street" id="street" required>
+                            </div>
+                            <div class="city-province">
+                                <div class="city">
+                                    <label for="city">City</label>
+                                    <input type="text" name="city" id="City" required >
+                                </div>
+                                <div class="province">
+                                    <label for="province">Province</label>
+                                    <select name="province" id="province" required>
+                                        <option value="Ontario">Ontario</option>
+                                        <option value="Quebec">Quebec</option>
+                                        <option value="Nova Scotia">Nova Scotia</option>
+                                        <option value="New Brunswick">New Brunswick</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="zip-country">
+                                <div class="zip">
+                                    <label for="zip">Zip/Postal code</label>
+                                    <input type="text" name="zip" id="zip" required>
+                                </div>
+                                <div class="country">
+                                    <label for="country">Country</label>
+                                    <select name="country" id="country" required>
+                                        <option value="Canada">Canada</option>
+                                        <option value="United States">United States</option>
+                                        <option value="Mexico">Mexico</option>
+                                        <option value="United Kingdom">United Kingdom</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="change-password">
+                        <div class="sp">
+                            <span>Change Password</span>
+                            <p>Pessword must be ofletist B choracters</p>
+                        </div>
+                        <div class="mdp" id="mdp">
+                            <div class="password">
+                                <label for="password">Password</label>
+                                <input type="password" name="password" id="password" required>
+                            </div>
+                            <div class="confirm-password">
+                                <label for="confirm-password">Confirm Password</label>
+                                <input type="password" name="confirm-password" id="confirm-password" required>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="btn">
+                        <input type="reset" value="CANCEL">
+                        <input type="submit" value="UPDATE">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

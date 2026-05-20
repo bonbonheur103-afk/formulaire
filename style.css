@@ -1,0 +1,211 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container{
+    height: 100%;
+    margin: 20px;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    
+}   
+.form1, .form2{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    gap: 50px;
+}
+.icone{
+    font-size: 50px;
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 50%;
+}
+.bloc1, .bloc2{
+    width: 100%;
+    padding: 0px 25px;
+    box-shadow: 0px 0px 5px 0px #e6e4e4;
+}
+.bloc1 span, .set{
+    font-size: 50px;
+    font-weight: 200 !important;
+}
+form{
+    margin-top: 8px;
+    width: 98%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.fullname, .email, .phone, .street{
+    display: flex;
+    flex-direction: column;
+}
+label{
+    font-weight: bold;
+}
+.fullname input, .email input, .phone input, .street input{
+    padding: 8px 0px;
+    border: none;
+    outline: none;
+    background-color: #e6e4e4;
+    width: 100%;
+}
+.plan-billing, .city-province, .zip-country , .mdp{
+    display: flex;
+    justify-content: space-between; 
+}
+.plan-billing div, .city-province div, .zip-country div, .mdp div{
+    display: flex;
+    flex-direction: column;
+    width: 48%;
+    
+}
+.plan-billing input, .city-province input, .zip-country input, .mdp input{
+    padding: 8px 0px;
+    border: none;
+    outline: none;
+    background-color: #e6e4e4;
+    width: 100%;
+}
+.plan-billing select, .city-province select, .zip-country select{
+    padding: 8px 0px;
+    border: none;
+    outline: none;
+    background-color: #e6e4e4;
+    width: 100%;
+}
+.btn{
+    padding: 15px 0px;
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+}
+input[type="submit"]{
+    background-color: #4A92C4;
+    color: white;
+    border-radius: 5px;
+    padding: 15px 30px;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+input[type="reset"]{
+    background-color: white;
+    color: #bebebe;
+    border-radius: 5px;
+    padding: 15px 30px;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+.icone1{
+    font-size: 50px;
+    background-color:#24B17D;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 50%;
+}
+hr{
+    border: 1px solid #e6e4e4;
+    margin-top: 15px;
+}
+.Account , .billings , .busness-adress, .change-password{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+
+}
+.bloc-account{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.bloc-account , #plan-billing , .bloc-busness, #mdp{
+    width: 70%;
+   
+}
+.Account span , .billings span , .busness-adress span , .sp{
+    width: 30%;
+}
+.Account .phone input{
+    width: 50%;
+}
+.form2 span{
+    font-weight: bold;
+}
+.bloc-busness{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+p{
+    font-size: 10px;
+    color: #e6e4e4;
+    font-weight: bold;
+}
+.form2 input[name="fullname"], .form2 input[name="email"]{
+    width: 80%;
+}
+@media(max-width:1029px){
+    .container{
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    }
+    .form1, .form2{
+        width: 70%;
+    }
+    .icone , .icone1{
+        font-size: 25px;
+        padding: 10px 15px;
+    }
+    .bloc1 span, .set{
+        font-size: 25px;
+        font-weight: 200 !important;
+
+    }
+    .label , .form2 span{
+        font-size: 18px;
+    }
+}
+@media(max-width:778px){
+    .form1, .form2{
+        width: 100%;
+    }
+}
+@media(max-width:579px){
+    .mdp , .plan-billing, .city-province,.zip-country{
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        gap: 8px;
+    }
+    .mdp div , .plan-billing div, .city-province div, .zip-country div{
+        width: 100%;
+    }
+    .form2 input[name="fullname"], .form2 input[name="email"], .Account .phone input{
+        width: 100%;
+    }
+    .sp span{
+        font-size: 10px;
+    }
+    .sp p{
+        font-size: 6px;
+    }
+    .Account, .billings,.busness-adress, .change-password{
+        flex-direction: column;
+        align-items: center;
+        border: 2px solid red;
+    }
+    .Account span, .bloc-account,.billings span, #plan-billing, .busness-adress span, .bloc-busness, .sp,#mdp{
+        width: 100% ;
+    }
+}
+
